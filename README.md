@@ -1,3 +1,6 @@
+Перед запуском проекта, необходимо установить на веб-сервер beckend данного приложения, написанный на PHP, который находится по сссылке https://github.com/kurkutov/tasklist-backend, далее заменить значение премеменной baseURL в файле ./src/axios/API.js, на путь, указанный при установке beckend
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

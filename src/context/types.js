@@ -1,0 +1,11 @@
+export const SHOW_ALERT = 'SHOW_ALERT'
+export const HIDE_ALERT = 'HIDE_ALERT'
+
+export const INIT_TASKS = "INIT_TASKS"
+export const GET_TASKS = 'GET_TASKS'
+export const GET_TASKS_BY_STATUS = 'GET_TASKS_BY_STATUS'
+export const GET_TASK_STATUSES = 'GET_TASK_STATUSES'
+export const GET_TASK_PRIORITIES = 'GET_TASK_PRIORITIES'
+export const GET_TASKS_ERROR = 'GET_TASKS_ERROR'
+export const SEARCH_TASKS = 'SEARCH_TASKS'
+export const SET_LOADING = 'SET_LOADING'

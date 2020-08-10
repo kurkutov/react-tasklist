@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext, useEffect} from 'react';
+import {TaskContext} from './context/task/TaskContext'
+import Layout from './hoc/Layout/Layout'
 import './App.css';
+import Loader from './components/UI/Loader/Loader'
 
 function App() {
+
+  const tContext = useContext(TaskContext)
+
+  useEffect( () => {
+    tContext.init()
+  }, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    tContext.loading ? <Loader/> : tContext.error ? <h1>Ошибка сервера</h1> : <Layout/>
   );
+
 }
 
 export default App;

@@ -1,0 +1,55 @@
+.task-mobile {
+    border: 1px solid #6c757d;
+    margin-bottom: 16px;
+}
+
+.task-mobile .task-options-item {
+    display: flex;
+    border-bottom: 1px solid #6c757d;
+}
+
+.task-mobile .task-options-item:last-child {
+    border-bottom: none;
+}
+
+.task-mobile .task-options-item-label {
+    width: 125px;
+    padding: 6px 12px;
+    border-right: 1px solid #6c757d;
+}
+
+.task-mobile .task-options-item-data {
+    width: calc(100% - 153px);
+    padding: 6px 12px;
+}
+
+@media (min-width: 992px) {
+    .task-desktop {
+        display: flex;
+        border-top: 1px solid #6c757d;
+    }
+    .task-desktop:last-child {
+        border-bottom: 1px solid #6c757d;
+    }
+
+    .task-desktop .task-desktop-item {
+        width: 150px;
+        box-sizing: border-box;
+        padding: 6px 12px;
+        text-align: center;
+        border-left: 1px solid #6c757d;
+    }
+    .task-desktop .task-desktop-item:last-child {
+        border-right: 1px solid #6c757d;
+    }
+    .task-desktop .task-desktop-item:first-child {
+        width: 210px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .task-desktop .task-desktop-item:first-child {
+        width: 390px;
+    }
+}
